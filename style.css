@@ -69,6 +69,10 @@ footer a:hover {
   margin: 20px 0;
 }
 
+.project p {
+  text-align: left;
+}
+
 .skills ul {
   display: flex;
   justify-content: center;
