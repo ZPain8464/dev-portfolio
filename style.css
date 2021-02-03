@@ -1,0 +1,108 @@
+* {
+  color: #373d3f;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+header {
+  background: #dadedf;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p,
+p a {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+}
+
+img {
+  max-width: 90%;
+  height: 270px;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 15%);
+}
+
+.projects {
+  display: flex;
+  margin: 50px 0;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.projects h2,
+.projects a,
+.skills h2,
+footer ul li a,
+footer li {
+  color: #7ab4c2;
+}
+
+.projects h2,
+.skills h2 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.projects a:hover,
+footer a:hover {
+  color: #00abdf;
+}
+
+.projects .project {
+  flex: 1;
+  margin: 20px 0;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto 50px;
+  padding: 20px;
+}
+
+.skills ul li {
+  margin: 0 10px;
+}
+
+i {
+  font-size: 55px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .projects {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  header p {
+    width: 90%;
+  }
+
+  .skills ul li {
+    padding: 15px;
+  }
+}
