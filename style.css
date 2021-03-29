@@ -1,5 +1,4 @@
 * {
-  color: #373d3f;
   margin: 0;
   box-sizing: border-box;
   padding: 0;
@@ -10,25 +9,56 @@
   text-align: center;
 }
 
+body {
+  background: linear-gradient(85deg, #434343, #262626);
+}
+
 header {
-  background: #dadedf;
+  background: linear-gradient(#7b4397, #dc2430);
+  padding-bottom: 10px;
 }
 
 h1 {
   margin: 0;
   padding: 20px;
+  color: #ffffff;
 }
 
 h2 {
   font-size: 20px;
+  color: #fff;
 }
 
+.profile-statement {
+  border-radius: 20px;
+  width: 50%;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.profile-statement p {
+  width: 100%;
+  color: #474747;
+}
 p,
 p a {
   width: 65%;
   margin: 0 auto;
   padding: 10px;
   font-size: 20px;
+}
+
+button#collapsible.collapsible {
+  border: white 2px solid;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+button#collapsible.collapsible:hover {
+  background: linear-gradient(85deg, #434343, #262626);
+  color: #fff;
 }
 
 img {
@@ -42,10 +72,22 @@ img {
   display: flex;
   margin: 50px 0;
   justify-content: space-around;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .projects h2,
+.project p,
+.project h3,
+.p-skills-section {
+  color: #fff;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .projects a,
 .skills h2,
 footer ul li a,
@@ -64,9 +106,9 @@ footer a:hover {
   color: #00abdf;
 }
 
-.projects .project {
-  flex: 1;
-  margin: 20px 0;
+.project {
+  width: 500px;
+  margin-top: 20px;
 }
 
 .project p {
@@ -87,14 +129,14 @@ footer a:hover {
 
 .skills ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 80%;
   margin: 0 auto 50px;
   padding: 20px;
 }
 
-.skills ul li {
+.skills ul {
   margin: 0 10px;
 }
 
@@ -120,9 +162,34 @@ footer ul li {
   font-size: 15px;
 }
 
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  background: #fff;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.content p {
+  text-align: left;
+  width: 85%;
+  color: #474747;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .projects {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%;
   }
 
   .project-skills {

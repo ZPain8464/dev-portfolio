@@ -16,161 +16,245 @@
     <title>Zach | Portfolio</title>
     <link rel="shortcut icon" type="image/x-icon" href="/Images/favicon.ico" />
   </head>
-
-  <header>
-    <h1>Zachary Painter</h1>
-    <h2>Full-Stack Developer</h2>
-    <p>
-      I'm a full-stack web developer with a passion for creating user-friendly
-      sites and apps. Please contact me if you're interested in collaborating on
-      open-source projects or any front- or back-end work — I'd love to hear
-      from you!
-    </p>
-  </header>
-  <section class="about-me">
-    <h2>A Little About Me:</h2>
-    <p>
-      Outside of coding, I love to run and listen to music. So, When I'm not
-      working on a coding project, you can find me crawling links for new music
-      on Bandcamp, or running on a trail. Also (in case you're curious), I
-      worked as a content marketing specialist in a past life, where I worked
-      alongside both devs and designers. It really pushed me to expand my
-      skillset and learn to code!
-    </p>
-  </section>
-
-  <section class="projects">
-    <div class="project">
-      <h2>Bookly</h2>
-      <img src="Images/bookly-homepage.png" alt="" />
-      <p>
-        Full-Stack event planning app for teams and businesses that allows users
-        to create events and add team members by email invites.
-      </p>
-      <h3><b>Tech:</b></h3>
-      <div class="p-skills-section">
-        <ul class="project-skills">
-          <li>React</li>
-          <li>Express</li>
-          <li>Node</li>
-          <li>PSQL</li>
-          <li>SendGrid API</li>
-        </ul>
+  <body>
+    <header>
+      <h1>Zachary Painter</h1>
+      <div class="profile-statement">
+        <h2><b>Full-Stack Developer</b></h2>
+        <p>
+          I'm a full-stack web developer with a passion for creating
+          user-friendly sites and apps. Please contact me if you're interested
+          in collaborating on open-source projects or any front- or back-end
+          work — I'd love to hear from you!
+        </p>
       </div>
-      <h4>
-        <a href="https://github.com/ZPain8464/bookly-app" target="_blank"
-          >Code</a
+    </header>
+    <section class="about-me">
+      <h2>
+        <button
+          type="button"
+          id="collapsible"
+          onclick="openCollapsible()"
+          class="collapsible"
         >
-        |
-        <a href="https://bookly-app.vercel.app/" target="_blank">Live Site</a>
-      </h4>
-    </div>
-    <div class="project">
-      <h2>BarCart</h2>
-      <img src="Images/barcart-homepage.png" alt="" />
-      <p>
-        API capstone project that fetches drink recommendations based on user
-        input. Not sure what to make with what you have on hand? This app's for
-        you.
-      </p>
-      <h3><b>Tech:</b></h3>
-      <div class="p-skills-section">
-        <ul class="project-skills">
-          <li>JQuery</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Cocktail DB API</li>
-        </ul>
+          About me +
+        </button>
+      </h2>
+      <div id="content" class="content">
+        <p>
+          I'm a marketer turned dev with 5+ years of combined experience in
+          content marketing and SEO. <br />So, I code with SEO best-practices in
+          mind, and enjoy designs and layouts that resonate with users.<br />
+          Check out some of my projects below to get a feel for my work.
+        </p>
       </div>
-      <h4>
-        <a
-          href="https://github.com/ZPain8464/cocktail-app"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Code</a
-        >
-        |
-        <a
-          href="https://zpain8464.github.io/cocktail-app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Live Site</a
-        >
-      </h4>
-    </div>
-    <div class="project">
-      <h2>Do It Already</h2>
+    </section>
 
-      <img src="Images/dia-homepage.png" alt="" />
-      <p>
-        Full-Stack todo app that allows users to view pending and completed
-        bucket list items so they can see what they've accomplished over time.
-      </p>
-      <h3><b>Tech:</b></h3>
-      <div class="p-skills-section">
-        <ul class="project-skills">
-          <li>React</li>
-          <li>Express</li>
-          <li>Node</li>
-          <li>PSQL</li>
-        </ul>
+    <section class="projects">
+      <div class="project">
+        <h2>Bookly</h2>
+        <img src="Images/bookly-homepage.png" alt="" />
+        <p>
+          Full-Stack event planning app for teams and businesses that allows
+          users to create events and add team members by email invites.
+        </p>
+        <h3><b>Tech:</b></h3>
+        <div class="p-skills-section">
+          <ul class="project-skills">
+            <li>React</li>
+            <li>Express</li>
+            <li>Node</li>
+            <li>PSQL</li>
+            <li>SendGrid API</li>
+          </ul>
+        </div>
+        <h4>
+          <a href="https://github.com/ZPain8464/bookly-app" target="_blank"
+            >Code</a
+          >
+          |
+          <a href="https://bookly-app.vercel.app/" target="_blank">Live Site</a>
+        </h4>
       </div>
-      <h4>
-        <a
-          href="https://github.com/ZPain8464/do-it-already-app"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Code</a
-        >
-        |
-        <a
-          href="https://do-it-already-app.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Live Site</a
-        >
-      </h4>
-    </div>
-  </section>
+      <div class="project">
+        <h2>BarCart</h2>
+        <img src="Images/barcart-homepage.png" alt="" />
+        <p>
+          API capstone project that fetches drink recommendations based on user
+          input. Not sure what to make with what you have on hand? This app's
+          for you.
+        </p>
+        <h3><b>Tech:</b></h3>
+        <div class="p-skills-section">
+          <ul class="project-skills">
+            <li>JQuery</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Cocktail DB API</li>
+          </ul>
+        </div>
+        <h4>
+          <a
+            href="https://github.com/ZPain8464/cocktail-app"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Code</a
+          >
+          |
+          <a
+            href="https://zpain8464.github.io/cocktail-app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live Site</a
+          >
+        </h4>
+      </div>
+      <div class="project">
+        <h2>Do It Already</h2>
 
-  <section class="skills">
-    <h2>Skills:</h2>
-    <ul>
-      <li><i class="devicon-html5-plain-wordmark colored"></i></li>
-      <li><i class="devicon-css3-plain-wordmark colored"></i></li>
-      <li><i class="devicon-javascript-plain colored"></i></li>
-      <li><i class="devicon-jquery-plain-wordmark colored"></i></li>
-      <li><i class="devicon-nodejs-plain colored"></i></li>
-      <li><i class="devicon-react-original-wordmark colored"></i></li>
-      <li><i class="devicon-git-plain colored"></i></li>
-      <li><i class="devicon-github-original colored"></i></li>
-      <li><i class="devicon-express-original colored"></i></li>
-      <li><i class="devicon-postgresql-plain colored"></i></li>
-    </ul>
-  </section>
+        <img src="Images/dia-homepage.png" alt="" />
+        <p>
+          Full-Stack todo app that allows users to view pending and completed
+          bucket list items so they can see what they've accomplished over time.
+        </p>
+        <h3><b>Tech:</b></h3>
+        <div class="p-skills-section">
+          <ul class="project-skills">
+            <li>React</li>
+            <li>Express</li>
+            <li>Node</li>
+            <li>PSQL</li>
+          </ul>
+        </div>
+        <h4>
+          <a
+            href="https://github.com/ZPain8464/do-it-already-app"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Code</a
+          >
+          |
+          <a
+            href="https://do-it-already-app.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live Site</a
+          >
+        </h4>
+      </div>
+      <div class="project">
+        <h2>ACNH: Bells Calculator</h2>
 
-  <footer>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/ZPain8464/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-      </li>
-      <li>
-        <b>Email:</b
-        ><a href="mailto:z.painter45@gmail.com"> z.painter45@gmail.com</a>
-      </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/in/zachary-painter/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LinkedIn</a
-        >
-      </li>
-    </ul>
-  </footer>
+        <img
+          src="Images/acnh-bells-calc.png"
+          alt="animal-crossing-bells-calculator"
+        />
+        <p>
+          A very basic Animal Crossing calculator designed to give you the total
+          sum of in-game items. Used a third-party AC API to get access to
+          in-game prices.
+        </p>
+        <h3><b>Tech:</b></h3>
+        <div class="p-skills-section">
+          <ul class="project-skills">
+            <li>React</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <h4>
+          <a
+            href="https://github.com/ZPain8464/acnh-bells-calculator"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Code</a
+          >
+          |
+          <a
+            href="https://acnh-bells-calculator.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live Site</a
+          >
+        </h4>
+      </div>
+      <div class="project">
+        <h2>Interactive Pricing Component</h2>
+
+        <img
+          src="Images/interactive-pricing-component.png"
+          alt="interactive-pricing-app"
+        />
+        <p>
+          A simple FE pricing component that provides price ranges based on
+          monthly pageviews. Includes a toggle button that discounts prices by
+          25%.
+        </p>
+        <h3><b>Tech:</b></h3>
+        <div class="p-skills-section">
+          <ul class="project-skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript (ES)</li>
+          </ul>
+        </div>
+        <h4>
+          <a
+            href="https://github.com/ZPain8464/interactive-pricing-component"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Code</a
+          >
+          |
+          <a
+            href="https://zpain8464.github.io/interactive-pricing-component/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live Site</a
+          >
+        </h4>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills:</h2>
+      <ul>
+        <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+        <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+        <li><i class="devicon-javascript-plain colored"></i></li>
+        <li><i class="devicon-jquery-plain-wordmark colored"></i></li>
+        <li><i class="devicon-nodejs-plain colored"></i></li>
+        <li><i class="devicon-react-original-wordmark colored"></i></li>
+        <li><i class="devicon-git-plain colored"></i></li>
+        <li><i class="devicon-github-original colored"></i></li>
+        <li><i class="devicon-express-original colored"></i></li>
+        <li><i class="devicon-postgresql-plain colored"></i></li>
+      </ul>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/ZPain8464/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <b>Email:</b
+          ><a href="mailto:z.painter45@gmail.com"> z.painter45@gmail.com</a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/zachary-painter/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <script src="functions.js"></script>
+  </body>
 </html>
