@@ -18,6 +18,23 @@ header {
   padding-bottom: 10px;
 }
 
+nav h3 {
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 12px;
+  color: #fff;
+}
+
+nav a:link,
+nav a:active,
+nav a:visited {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #00abdf;
+}
+
 h1 {
   margin: 0;
   padding: 20px;
